@@ -1,0 +1,304 @@
+html, body {
+  margin:0;
+  padding:0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  height:100vh;
+}
+
+
+/* Global */
+
+section {
+  height: 100vh;
+}
+section:nth-child(1) {
+  background: lightblue;
+}
+section:nth-child(2) {
+  background: #F8EFBA;
+}
+section:nth-child(3) {
+  background: lightgrey;
+}
+section:nth-child(4) {
+  background: #ea8685;
+}
+section:nth-child(5) {
+  background: #1abc9c;
+}
+
+.container {
+  width:100%;
+  margin:auto;
+  overflow: hidden;
+}
+
+/* Header */
+
+.header{
+  width:80%;
+}
+
+header{
+  position:relative;
+  color: black;
+  padding-top:10px;
+  min-height: 50px;
+  border-bottom:pink 2px solid;
+}
+
+header a {
+  color:black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+header a:hover{
+  color:red;
+}
+
+header ul{
+  margin:0;
+  padding:0;
+}
+
+header li{
+  float:left;
+  display:inline;
+  margin:10px;
+  padding:5px;
+  text-decoration: none;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+/* Landing */
+
+#landingpage{
+  min-height: 100%;
+  min-width: 100%;
+  position:relative;
+  background:linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)), url(../img/landingimage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align:center;
+  color: white;
+}
+
+#landingpage h1{
+  margin-top: 100px;
+  font-size:100px;
+  margin-bottom: 10px;
+}
+
+#landingpage p{
+  font-size: 60px;
+  font-weight: bolder;
+  text-align: left;
+  margin-top:80px;
+  margin-left:30px;
+  width:66%;
+}
+
+/* About Me */
+
+#page1 {
+  height: 100%;
+  /* min-width: 100%; */
+}
+
+#page1 h1 {
+  width:80%;
+  margin:30px auto 15px;
+  padding: 0px auto;
+  text-align: center;
+  font-size: 2em;
+}
+
+#page1 h2, #page1 h5 {
+  margin:30px;
+}
+
+#page1 h5{
+  width:70%;
+  margin:20px auto 5px;
+}
+
+#page1 h5 span {
+  color:red;
+}
+
+.name{
+  color:#ee5253;
+}
+
+.job-title{
+  color:#10ac84;
+}
+
+#page1 li{
+  list-style: none;
+}
+
+.skills{
+  width:100%;
+  margin:0px auto 0px;
+  /* position:absolute; */
+  top:130%;
+  left:50%;
+  overflow:hidden;
+  background:white;
+  color:#313131;
+  box-sizing: border-box;
+  padding:20px;
+}
+
+.skills div{
+  width:100%;
+  background-color: lightblue;
+  height:24px;
+  border-radius: 3px;
+  position:relative;
+  overflow: hidden;
+}
+
+.html-bar::before {
+  content:"";
+  position:absolute;
+  width:80%;
+  height:24px;
+  left:0;
+  background:#e3498d
+}
+
+.css-bar::before {
+  content:"";
+  position:absolute;
+  width:45%;
+  height:24px;
+  left:0;
+  background:#793342
+}
+
+.javascript-bar::before {
+  content:"";
+  position:absolute;
+  width:10%;
+  height:24px;
+  left:0;
+  background:#e1f49e
+}
+
+.job-skills {
+  padding:0px 0px 10px;
+  border-bottom: 1px solid;
+}
+
+.column {
+  float:left;
+  width: 46%;
+  margin-top: 40px;
+  margin-left: 30px;
+  line-height: 1.5em;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.mrisho {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  padding:30px;
+  margin-top:30px;
+}
+
+/* Contact*/
+
+#page2 h1 {
+  width:80%;
+  margin:0px auto 15px;
+  padding-top: 30px;
+  padding: 0px auto;
+  text-align: center;
+  font-size: 2em;
+}
+
+#page2 p {
+  width:80%;
+  margin:30px auto;
+  line-height: 1.5em;
+}
+
+.form-container{
+  width:50%;
+  margin:50px auto;
+}
+
+.page-heading {
+  padding-top: 50px;
+  margin-left:30px;
+  font-size: 2em;
+}
+
+.contact-content{
+  margin: 10px auto;
+  width:80%;
+  letter-spacing:0.05em;
+}
+
+.contact-heading{
+  text-align: center;
+  font-size: 40px;
+
+}
+
+.label{
+  display: block;
+  margin-bottom:100px;
+}
+
+.span{
+  display:block;
+}
+
+.contact-info label{
+  width:48%;
+  margin:2%;
+}
+
+input, textarea{
+  width:550px;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+
+textarea{
+  background:lightgrey;
+  height:100px;
+}
+
+.button-holder{
+  text-align: center;
+  background: Transparent;
+  outline: none;
+  font-size: 30px;
+}
+
+@media and (max-width:320px) {/* CSS for screens that are 320 pixels or less will be put in this section */}
+@media (min-width:320px) and (max-width: 640px) { /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */}
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
